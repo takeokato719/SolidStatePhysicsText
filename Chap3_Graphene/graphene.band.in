@@ -1,0 +1,6 @@
+&bands
+   outdir = './work/',
+   prefix='graphene',
+   filband='graphene.band',
+   lsym=.true.
+/

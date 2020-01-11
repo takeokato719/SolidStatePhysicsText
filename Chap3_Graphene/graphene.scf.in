@@ -1,0 +1,34 @@
+&control
+ calculation = 'scf'
+ prefix='graphene',
+ tstress = .true.
+ tprnfor = .true.
+ pseudo_dir = './',
+ outdir='./work/'
+ disk_io='low'
+ wf_collect=.true.
+/
+&system
+ ibrav = 4,
+ celldm(1) = 4.602,
+ celldm(3) = 4,
+ nat = 2,
+ ntyp = 1,
+ ecutwfc = 30.0,
+ ecutrho = 150.0,
+ occupations = 'smearing'
+ smearing = 'm-p'
+ degauss = 0.01
+/
+&electrons
+ mixing_beta = 0.7
+ conv_thr = 1.0d-8
+/
+ATOMIC_SPECIES
+C  12.0107  C.pz-van_ak.UPF
+ATOMIC_POSITIONS {alat}
+C 0.00 0.00 0.00
+C 0.00 0.57735026918962576451 0.00
+K_POINTS {automatic}
+12 12 1 0 0 0
+
