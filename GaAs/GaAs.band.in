@@ -1,0 +1,6 @@
+&bands
+   outdir = './',
+   prefix='GaAs',
+   filband='GaAs.band',
+   lsym=.true.
+/
