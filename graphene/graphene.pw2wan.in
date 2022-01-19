@@ -1,6 +1,0 @@
-&inputpp
-    outdir='./work'
-    prefix='graphene',
-    seedname = 'graphene'
-    write_unk = .true.
-/
