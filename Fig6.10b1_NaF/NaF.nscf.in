@@ -1,0 +1,36 @@
+&control
+calculation = 'nscf'
+prefix = 'NaF'
+pseudo_dir = './'
+wf_collect = .true.
+/
+&system
+ibrav = 2
+celldm(1) = 8.8753
+nat = 2
+ntyp = 2
+ecutwfc = 60
+ecutrho = 250
+nbnd = 20
+/
+&electrons
+mixing_mode = 'plain'
+mixing_beta = 0.7
+conv_thr = 1.0d-8
+diagonalization = 'cg' 
+diago_david_ndim = 4
+/
+ATOMIC_SPECIES
+Na 1 Na.pbesol-spn-kjpaw_psl.1.0.0.UPF
+F 1 F.pbesol-n-kjpaw_psl.1.0.0.UPF
+ATOMIC_POSITIONS
+Na 0.00 0.00 0.00
+F 0.5 0.5 0.5
+K_POINTS {crystal_b}
+5
+ 0.00  0.50  0.00  20 !L
+ 0.00  0.00  0.00  30 !G
+-0.50  0.00 -0.50  10 !X
+-0.375 0.00 -0.625 30 !K,U
+ 0.00  0.00 -1.00  20 !G
+
