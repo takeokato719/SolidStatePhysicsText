@@ -1,0 +1,6 @@
+&bands
+   outdir = './',
+   prefix='NaI',
+   filband='NaI.band',
+   lsym=.true.
+/

@@ -1,0 +1,29 @@
+&control
+calculation = 'scf'
+restart_mode='from_scratch' ,
+prefix = 'NaI'
+pseudo_dir = './'
+wf_collect = .true.
+/
+&system
+ibrav = 2
+celldm(1) = 12.3442
+nat = 2
+ntyp = 2
+ecutwfc = 60
+ecutrho = 250
+/
+&electrons
+diagonalization = 'cg' 
+mixing_mode = 'plain'
+mixing_beta = 0.7
+conv_thr = 1.0d-8
+/
+ATOMIC_SPECIES
+Na 1 Na.pbesol-spn-kjpaw_psl.1.0.0.UPF
+I 1 I.pbesol-n-kjpaw_psl.1.0.0.UPF
+ATOMIC_POSITIONS
+Na 0.00 0.00 0.00
+I 0.5 0.5 0.5
+K_POINTS {automatic}
+8 8 8 0 0 0
