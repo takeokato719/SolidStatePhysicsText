@@ -21,4 +21,4 @@ set grid x
 set ylabel "Energy (eV)"
 set xtics ("{L}" 0, "{/Symbol G}" x1, "{X}" x2, "{K}" x3, "{/Symbol G}" xmax)
 
-plot "NaCl.band.gnu" u 1:($2-ef) w l
+plot "NaBr.band.gnu" u 1:($2-ef) w l
