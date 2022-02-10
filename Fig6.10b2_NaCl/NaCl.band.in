@@ -1,0 +1,6 @@
+&bands
+   outdir = './',
+   prefix='NaCl',
+   filband='NaCl.band',
+   lsym=.true.
+/

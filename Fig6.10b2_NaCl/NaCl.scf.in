@@ -1,0 +1,27 @@
+&control
+calculation = 'scf'
+prefix = 'NaCl'
+pseudo_dir = './'
+wf_collect = .true.
+/
+&system
+ibrav = 2
+celldm(1) = 10.66
+nat = 2
+ntyp = 2
+ecutwfc = 60
+ecutrho = 244
+/
+&electrons
+mixing_mode = 'plain'
+mixing_beta = 0.7
+conv_thr = 1.0d-8
+/
+ATOMIC_SPECIES
+Na 1 Na.pbesol-spn-kjpaw_psl.1.0.0.UPF
+Cl 1 Cl.pbesol-n-kjpaw_psl.1.0.0.UPF
+ATOMIC_POSITIONS
+Na 0.00 0.00 0.00
+Cl 0.5 0.5 0.5
+K_POINTS {automatic}
+8 8 8 0 0 0
